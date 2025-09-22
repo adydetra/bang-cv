@@ -23,16 +23,6 @@
             </p>
           </div>
 
-          <div class="animate-fade-in-delay-3 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button class="group relative transform cursor-pointer border-0 rounded-2xl bg-white px-8 py-4 text-lg text-gray-900 font-semibold shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-              <span class="relative z-10">Jelajahi Template</span>
-              <div class="absolute inset-0 rounded-2xl from-green-400 to-blue-500 bg-gradient-to-r opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            </button>
-            <button class="cursor-pointer border-0 rounded-2xl px-8 py-4 text-lg text-white font-semibold backdrop-blur-sm transition-all duration-300 hover:border-white/50 hover:bg-white/10">
-              Mulai Gratis
-            </button>
-          </div>
-
           <div class="animate-fade-in-delay-4 flexcenter flex-col gap-8 text-sm text-white/60 md:flex-row">
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-blue-400" />
