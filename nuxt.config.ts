@@ -25,9 +25,9 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       meta: [
-        { name: 'keywords', content: 'Ensik Archive is a captivating online gallery platform dedicated to preserving and showcasing a rich collection of historical, and documents.' },
-        { name: 'author', content: 'OSE' },
-        { name: 'apple-mobile-web-app-title', content: 'Ensik Arch' },
+        { name: 'keywords', content: 'Bang CV is a modern, performant CV/portfolio website, featuring smooth animations and a clean, professional design.' },
+        { name: 'author', content: 'Bang CV' },
+        { name: 'apple-mobile-web-app-title', content: 'Bang CV' },
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon/favicon-96x96.png', sizes: '96x96' },
