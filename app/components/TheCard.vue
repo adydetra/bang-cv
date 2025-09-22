@@ -47,16 +47,14 @@ function chatAdmin(id: string) {
         <div
           v-for="cv in cvTemplates"
           :key="cv.id"
-          class="group relative overflow-hidden border border-gray-200/50 rounded-3xl bg-white/80 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2"
+          class="group relative overflow-hidden border border-gray-200/50 rounded-3xl bg-white/80 backdrop-blur-sm"
         >
-          <div class="absolute inset-0 from-green-50/50 to-blue-50/50 bg-gradient-to-br opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
           <div class="relative p-1">
             <div class="relative overflow-hidden rounded-2xl from-gray-50 to-gray-100 bg-gradient-to-br">
               <NuxtImg
                 :src="cv.img"
                 :alt="`CV-${cv.id}`"
-                class="h-72 w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                class="h-72 w-full object-contain p-4"
                 loading="lazy"
                 format="webp"
               />
@@ -76,7 +74,7 @@ function chatAdmin(id: string) {
 
           <div class="relative p-6 space-y-4">
             <div class="space-y-2">
-              <h3 class="text-xl text-gray-900 font-bold transition-colors duration-300 group-hover:text-green-600">
+              <h3 class="text-xl text-gray-900 font-bold">
                 CV-{{ cv.id }}
               </h3>
               <div class="flex items-center gap-2">
