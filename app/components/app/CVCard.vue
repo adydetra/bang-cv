@@ -40,7 +40,7 @@ function chatAdmin() {
         />
         <div class="absolute right-3 top-3">
           <button
-            class="h-10 w-10 flex items-center justify-center rounded-full bg-white/90 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white"
+            class="size-10 flexcenter cursor-pointer border-0 rounded-full bg-white/90 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white"
             @click="openPreview"
           >
             <svg class="h-5 w-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,9 +59,6 @@ function chatAdmin() {
         </h3>
         <div class="flex items-center gap-2">
           <span class="text-2xl text-green-600 font-black">{{ harga }}</span>
-          <div class="rounded-full bg-green-100 px-2 py-1 text-xs text-green-700 font-semibold">
-            POPULER
-          </div>
         </div>
       </div>
 
@@ -70,7 +67,7 @@ function chatAdmin() {
       </p>
 
       <button
-        class="w-full transform rounded-2xl from-green-600 to-green-700 bg-gradient-to-r px-6 py-3 text-white font-semibold transition-all duration-300 hover:scale-105 hover:from-green-700 hover:to-green-800 hover:shadow-green-500/25 hover:shadow-lg"
+        class="w-full transform cursor-pointer border-0 rounded-md from-green-600 to-green-700 bg-gradient-to-r px-6 py-3 text-white font-semibold transition-all duration-300 hover:scale-105 hover:from-green-700 hover:to-green-800 hover:shadow-green-500/25 hover:shadow-lg"
         @click="chatAdmin"
       >
         💬 Chat Admin
@@ -81,13 +78,13 @@ function chatAdmin() {
   <Teleport to="body">
     <div
       v-if="showModal"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+      class="fixed inset-0 z-50 flexcenter bg-black/80 p-4 backdrop-blur-sm"
       @click="closePreview"
     >
       <div class="relative max-h-[90vh] max-w-4xl w-full overflow-hidden rounded-3xl bg-white shadow-2xl" @click.stop>
         <div class="absolute right-4 top-4 z-10">
           <button
-            class="h-12 w-12 flex items-center justify-center rounded-full bg-red-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-600"
+            class="h-12 w-12 flexcenter rounded-full bg-red-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-600"
             @click="closePreview"
           >
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
