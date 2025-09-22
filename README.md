@@ -1,4 +1,4 @@
-# **Bang CV** 🚀
+# **Bang CV** 📄
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
@@ -23,15 +23,30 @@ Bang CV is a modern, performant CV/portfolio website, featuring smooth animation
 
 ## Getting Started
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   bun install
-   ```
-3. Start the development server:
-   ```bash
-   bun dev
-   ```
+Required to install: [Node.js](https://nodejs.org/)
+
+Install dependencies:
+
+```bash
+bun install
+```
+
+Run Development
+
+```bash
+bun dev
+```
+
+---
+
+> [!NOTE]
+> if not using `bun` just delete `bun.lockb`, and switch to another package manager like:
+
+```bash
+# npm install
+# yarn install
+# pnpm install
+```
 
 ## License
 
