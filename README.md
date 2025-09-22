@@ -1,27 +1,38 @@
-# **Ensik Archieve** 📁
+# **Bang CV** 🚀
 
-Ensik Archive is a captivating online gallery platform dedicated to preserving and showcasing a rich collection of historical, and documents.
+![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
+
+Bang CV is a modern, performant CV/portfolio website built with Nuxt 3, featuring smooth animations and a clean, professional design.
 
 ## Features
 
-✔️ **Minimalist:** Clean design layout
+✨ **Modern UI** - Sleek and responsive design
 
-✔️ **Filter:** Sort photo by publisher or date
+🚀 **Blazing Fast** - Built with performance in mind
 
-✔️ **Fast:** Compressed photo & lazy load
+🎨 **Smooth Animations** - Enhanced with OGL and Lenis scroll
 
-## Built with
+🌓 **Dark Mode** - Easy on the eyes in any lighting
 
-- [Nuxt](https://nuxt.com)
-- [UnoCSS](https://unocss.dev)
-- [Vercel Blob](https://vercel.com/docs/storage/vercel-blob)
+## Tech Stack
 
-## Contributing
+- [Nuxt 3](https://nuxt.com) - The Intuitive Web Framework
+- [UnoCSS](https://unocss.dev) - The instant on-demand Atomic CSS engine
+- [OGL](https://github.com/oframe/ogl) - Minimal WebGL library
+- [VueUse](https://vueuse.org) - Collection of essential Vue Composition Utilities
 
-If you want to help us building, you can check our [**contributing guidelines**](.github/CONTRIBUTING.md) 📖
+## Getting Started
 
-### Top Contributors
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+3. Start the development server:
+   ```bash
+   bun dev
+   ```
 
-<a href="https://github.com/ose-id/ensik-archieve/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ose-id/ensik-archieve" />
-</a>
+## License
+
+The code is licensed [MIT](LICENSE)
