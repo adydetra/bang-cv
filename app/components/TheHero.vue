@@ -33,14 +33,14 @@
             </button>
           </div>
 
-          <div class="animate-fade-in-delay-4 flexcenter gap-8 text-sm text-white/60">
-            <div class="flex items-center gap-2">
-              <div class="h-2 w-2 rounded-full bg-green-400" />
-              <span>50+ Template</span>
-            </div>
+          <div class="animate-fade-in-delay-4 flexcenter flex-col gap-8 text-sm text-white/60 md:flex-row">
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-blue-400" />
               <span>Indonesia/English CV</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="h-2 w-2 rounded-full bg-green-400" />
+              <span>50+ Template</span>
             </div>
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-purple-400" />
