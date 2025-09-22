@@ -40,6 +40,8 @@ function closeModal() {
               :src="img"
               :alt="alt"
               class="h-auto max-h-[70vh] w-full rounded-xl object-contain"
+              loading="eager"
+              format="webp"
             />
           </div>
         </div>
