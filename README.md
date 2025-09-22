@@ -16,7 +16,7 @@ Bang CV is a modern, performant CV/portfolio website, featuring smooth animation
 
 ## Tech Stack
 
-- [Nuxt 3](https://nuxt.com) - The Intuitive Web Framework
+- [Nuxt 4](https://nuxt.com) - The Intuitive Web Framework
 - [UnoCSS](https://unocss.dev) - The instant on-demand Atomic CSS engine
 - [OGL](https://github.com/oframe/ogl) - Minimal WebGL library
 - [VueUse](https://vueuse.org) - Collection of essential Vue Composition Utilities
