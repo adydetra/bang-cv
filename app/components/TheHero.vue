@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h70vh min-h-500px w-full overflow-hidden">
+  <section class="relative h70vh min-h-500px w-full overflow-hidden bg-black">
     <div class="absolute inset-0 z-1">
       <BitsBGAurora
         :color-stops="['#000000', '#171D22', '#000000']"
