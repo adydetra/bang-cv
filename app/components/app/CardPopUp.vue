@@ -25,7 +25,7 @@ function closeModal() {
       <div class="relative max-h-[90vh] max-w-4xl w-full overflow-hidden rounded-3xl bg-white shadow-2xl" @click.stop>
         <div class="absolute right-4 top-4 z-10">
           <button
-            class="h-12 w-12 flexcenter rounded-full bg-red-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-600"
+            class="size-12 flexcenter cursor-pointer border-0 rounded-full bg-red-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-600"
             @click="closeModal"
           >
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
