@@ -15,9 +15,6 @@
       <div class="container mx-auto max-w-4xl">
         <div class="text-center text-white space-y-8">
           <div class="space-y-4">
-            <div class="inline-flex animate-fade-in items-center border border-white/20 rounded-full bg-white/10 px-4 py-2 text-sm text-white/90 font-medium backdrop-blur-sm">
-              ✨ Template CV Terbaru 2025
-            </div>
             <h1 class="animate-fade-in-delay text-6xl font-black tracking-tight md:text-8xl">
               Bang<span class="text-green-400">CV</span>
             </h1>
@@ -43,7 +40,7 @@
             </div>
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-blue-400" />
-              <span>Download Instan</span>
+              <span>Indonesia/English CV</span>
             </div>
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-purple-400" />
