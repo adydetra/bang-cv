@@ -4,7 +4,7 @@ const cvTemplates = getAllTemplates();
 </script>
 
 <template>
-  <section class="mx-auto bg-white lg:px-64 py-20">
+  <section class="mx-auto bg-white py-20 lg:px-64">
     <div class="px-4">
       <div class="mb-16 text-center space-y-4">
         <h2 class="text-5xl text-gray-900 font-black tracking-tight md:text-6xl">
