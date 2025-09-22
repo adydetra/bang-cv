@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
-Bang CV is a modern, performant CV/portfolio website built with Nuxt 3, featuring smooth animations and a clean, professional design.
+Bang CV is a modern, performant CV/portfolio website, featuring smooth animations and a clean, professional design.
 
 ## Features
 
