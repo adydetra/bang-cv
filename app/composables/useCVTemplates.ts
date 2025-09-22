@@ -12,7 +12,7 @@ export function useCVTemplates() {
     {
       id: 1,
       img: '/img/cv/CV1.jpg',
-      harga: 'Rp 50.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV modern dengan desain clean dan profesional. Cocok untuk fresh graduate dan profesional muda yang ingin tampil menonjol.',
       category: 'Modern',
       featured: true,
@@ -20,7 +20,7 @@ export function useCVTemplates() {
     {
       id: 2,
       img: '/img/cv/CV2.png',
-      harga: 'Rp 75.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV kreatif dengan elemen visual yang menarik. Perfect untuk designer, marketer, dan profesi kreatif lainnya.',
       category: 'Creative',
       featured: true,
@@ -28,7 +28,7 @@ export function useCVTemplates() {
     {
       id: 3,
       img: '/img/cv/CV3.png',
-      harga: 'Rp 100.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV premium untuk level executive dan senior manager. Desain elegan dengan layout yang sophisticated.',
       category: 'Executive',
       featured: false,
@@ -36,7 +36,7 @@ export function useCVTemplates() {
     {
       id: 4,
       img: '/img/cv/CV4.png',
-      harga: 'Rp 60.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV khusus untuk IT professional dan tech specialist. Clean, minimalis, dan fokus pada technical skills.',
       category: 'Tech',
       featured: true,
@@ -44,7 +44,7 @@ export function useCVTemplates() {
     {
       id: 5,
       img: '/img/cv/CV5.png',
-      harga: 'Rp 65.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV untuk business analyst dan consultant. Layout terstruktur dengan emphasis pada achievements dan metrics.',
       category: 'Business',
       featured: false,
@@ -52,7 +52,7 @@ export function useCVTemplates() {
     {
       id: 6,
       img: '/img/cv/CV6.png',
-      harga: 'Rp 70.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV untuk marketing professional dengan desain yang eye-catching dan modern. Highlight your campaigns dan results.',
       category: 'Marketing',
       featured: true,
@@ -60,7 +60,7 @@ export function useCVTemplates() {
     {
       id: 7,
       img: '/img/cv/CV7.png',
-      harga: 'Rp 55.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV untuk finance professional dengan layout yang clean dan trustworthy. Perfect untuk banker dan financial analyst.',
       category: 'Finance',
       featured: false,
@@ -68,7 +68,7 @@ export function useCVTemplates() {
     {
       id: 8,
       img: '/img/cv/CV8.png',
-      harga: 'Rp 65.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV untuk healthcare professional. Desain yang professional dan clean dengan focus pada credentials dan experience.',
       category: 'Healthcare',
       featured: false,
@@ -76,7 +76,7 @@ export function useCVTemplates() {
     {
       id: 9,
       img: '/img/cv/CV9.jpg',
-      harga: 'Rp 80.000',
+      harga: 'Rp 15.000',
       deskripsi: 'Template CV untuk entrepreneur dan startup founder. Bold design yang menunjukkan leadership dan innovation mindset.',
       category: 'Startup',
       featured: true,
