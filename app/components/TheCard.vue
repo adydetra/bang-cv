@@ -3,7 +3,6 @@ interface _CVTemplate {
   id: number;
   img: string;
   harga: string;
-  deskripsi: string;
   category: string;
   featured?: boolean;
 }
@@ -84,10 +83,6 @@ function chatAdmin(id: string) {
                 <span class="text-2xl text-green-600 font-black">{{ cv.harga }}</span>
               </div>
             </div>
-
-            <p class="line-clamp-3 text-sm text-gray-600 leading-relaxed">
-              {{ cv.deskripsi }}
-            </p>
 
             <button
               class="w-full transform cursor-pointer border-0 rounded-md from-green-600 to-green-700 bg-gradient-to-r px-6 py-3 text-white font-semibold transition-all duration-300 hover:scale-105 hover:from-green-700 hover:to-green-800 hover:shadow-green-500/25 hover:shadow-lg"
