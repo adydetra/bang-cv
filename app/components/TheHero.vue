@@ -11,7 +11,7 @@
       />
     </div>
 
-    <div class="relative z-2 h-full flex items-center justify-center px-4">
+    <div class="relative z-2 h-full flexcenter px-4">
       <div class="container mx-auto max-w-4xl">
         <div class="text-center text-white space-y-8">
           <div class="space-y-4">
@@ -33,7 +33,7 @@
             </button>
           </div>
 
-          <div class="animate-fade-in-delay-4 flex items-center justify-center gap-8 text-sm text-white/60">
+          <div class="animate-fade-in-delay-4 flexcenter gap-8 text-sm text-white/60">
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-green-400" />
               <span>50+ Template</span>
