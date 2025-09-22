@@ -1,10 +1,11 @@
 <script setup lang="ts">
 interface _CVTemplate {
-  id: string;
+  id: number;
   img: string;
-  title: string;
   harga: string;
   deskripsi: string;
+  category: string;
+  featured?: boolean;
 }
 
 const { getAllTemplates } = useCVTemplates();
@@ -14,9 +15,9 @@ const selectedImage = ref('');
 const selectedAlt = ref('');
 const showPopup = ref(false);
 
-function openPreview(img: string, title: string) {
+function openPreview(img: string, id: number) {
   selectedImage.value = img;
-  selectedAlt.value = title;
+  selectedAlt.value = `CV-${id}`;
   showPopup.value = true;
 }
 
@@ -24,8 +25,8 @@ function closePreview() {
   showPopup.value = false;
 }
 
-function chatAdmin(title: string) {
-  const message = `Halo kak saya ingin membeli ${title}`;
+function chatAdmin(id: string) {
+  const message = `Halo kak saya ingin membeli CV-${id}`;
   const whatsappUrl = `https://wa.me/6285155299160?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 }
@@ -55,7 +56,7 @@ function chatAdmin(title: string) {
             <div class="relative overflow-hidden rounded-2xl from-gray-50 to-gray-100 bg-gradient-to-br">
               <NuxtImg
                 :src="cv.img"
-                :alt="cv.title"
+                :alt="`CV-${cv.id}`"
                 class="h-72 w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
                 format="webp"
@@ -63,7 +64,7 @@ function chatAdmin(title: string) {
               <div class="absolute right-3 top-3">
                 <button
                   class="size-10 flexcenter cursor-pointer border-0 rounded-full bg-white/90 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white"
-                  @click="openPreview(cv.img, cv.title)"
+                  @click="openPreview(cv.img, cv.id)"
                 >
                   <svg class="h-5 w-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -77,7 +78,7 @@ function chatAdmin(title: string) {
           <div class="relative p-6 space-y-4">
             <div class="space-y-2">
               <h3 class="text-xl text-gray-900 font-bold transition-colors duration-300 group-hover:text-green-600">
-                {{ cv.title }}
+                CV-{{ cv.id }}
               </h3>
               <div class="flex items-center gap-2">
                 <span class="text-2xl text-green-600 font-black">{{ cv.harga }}</span>
@@ -90,7 +91,7 @@ function chatAdmin(title: string) {
 
             <button
               class="w-full transform cursor-pointer border-0 rounded-md from-green-600 to-green-700 bg-gradient-to-r px-6 py-3 text-white font-semibold transition-all duration-300 hover:scale-105 hover:from-green-700 hover:to-green-800 hover:shadow-green-500/25 hover:shadow-lg"
-              @click="chatAdmin(cv.title)"
+              @click="chatAdmin(cv.id.toString())"
             >
               💬 Chat Admin
             </button>
