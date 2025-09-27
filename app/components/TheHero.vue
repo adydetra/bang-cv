@@ -30,7 +30,7 @@
             </div>
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-green-400" />
-              <span>50+ Template</span>
+              <span>Template Profesional</span>
             </div>
             <div class="flex items-center gap-2">
               <div class="h-2 w-2 rounded-full bg-purple-400" />
