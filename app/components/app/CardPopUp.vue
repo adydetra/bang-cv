@@ -23,6 +23,18 @@ function closeModal() {
       @click="closeModal"
     >
       <div class="relative max-h-[90vh] max-w-4xl w-full overflow-hidden rounded-3xl bg-white shadow-2xl" @click.stop>
+        <div class="absolute left-4 top-4 z-10 hidden md:block">
+          <a
+            :href="img"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 rounded-full bg-blue-500 px-4 py-2 text-sm text-white font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:bg-blue-600"
+            aria-label="Open image in new tab"
+          >
+            <span>Open Image</span>
+          </a>
+        </div>
+
         <div class="absolute right-4 top-4 z-10">
           <button
             class="size-12 flexcenter cursor-pointer border-0 rounded-full bg-red-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-600"
@@ -43,6 +55,17 @@ function closeModal() {
               loading="eager"
               format="webp"
             />
+          </div>
+          <div class="mt-4 flexcenter md:hidden">
+            <a
+              :href="img"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flexcenter rounded-full bg-blue-500 px-6 py-2 text-sm text-white font-medium shadow-lg transition-all duration-300 hover:scale-[1.02] hover:bg-blue-600"
+              aria-label="Open image in new tab"
+            >
+              Open Image
+            </a>
           </div>
         </div>
       </div>
