@@ -95,8 +95,8 @@ useHead({
         Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui:
       </p>
       <ul class="mb-4 list-disc list-inside">
-        <li>Email: privacy@bangcv.com</li>
-        <li>Telepon: +62 123 4567 890</li>
+        <li>Instagram: @bang.cv.id</li>
+        <li>Telepon: 0851-5529-9160</li>
       </ul>
     </div>
   </div>
