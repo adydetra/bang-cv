@@ -12,7 +12,7 @@ const privacyIntro
 
 const privacySections: PrivacySection[] = [
   {
-    title: '1. Informasi yang Kami Kumpulkan',
+    title: 'Informasi yang Kami Kumpulkan',
     paragraphs: [
       'Kami mengumpulkan informasi pribadi yang Anda berikan secara sukarela saat menggunakan layanan kami, termasuk namun tidak terbatas pada:',
     ],
@@ -25,7 +25,7 @@ const privacySections: PrivacySection[] = [
     ],
   },
   {
-    title: '2. Penggunaan Informasi',
+    title: 'Penggunaan Informasi',
     paragraphs: [
       'Informasi yang Anda berikan digunakan secara eksklusif untuk:',
     ],
@@ -37,13 +37,13 @@ const privacySections: PrivacySection[] = [
     ],
   },
   {
-    title: '3. Perlindungan Data',
+    title: 'Perlindungan Data',
     paragraphs: [
       'Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk melindungi informasi pribadi Anda dari akses yang tidak sah, perubahan, pengungkapan, atau penghancuran. Data Anda disimpan dalam server yang aman dan hanya dapat diakses oleh personel yang berwenang.',
     ],
   },
   {
-    title: '4. Berbagi Informasi',
+    title: 'Berbagi Informasi',
     paragraphs: [
       'Kami tidak menjual, memperdagangkan, atau menyewakan informasi pribadi Anda kepada pihak ketiga tanpa izin Anda, kecuali dalam keadaan berikut:',
     ],
@@ -54,7 +54,7 @@ const privacySections: PrivacySection[] = [
     ],
   },
   {
-    title: '5. Hak Anda',
+    title: 'Hak Anda',
     paragraphs: [
       'Anda memiliki hak untuk:',
     ],
@@ -66,25 +66,29 @@ const privacySections: PrivacySection[] = [
     ],
   },
   {
-    title: '6. Cookies',
+    title: 'Cookies',
     paragraphs: [
       'Situs web kami menggunakan cookies untuk meningkatkan pengalaman pengguna. Anda dapat mengelola preferensi cookie melalui pengaturan browser Anda.',
     ],
   },
   {
-    title: '7. Perubahan Kebijakan',
+    title: 'Perubahan Kebijakan',
     paragraphs: [
       'Kami berhak untuk memperbarui kebijakan privasi ini sewaktu-waktu. Perubahan akan diberitahukan melalui situs web kami atau email.',
     ],
   },
   {
-    title: '8. Kontak Kami',
+    title: 'Kontak Kami',
     paragraphs: [
       'Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui:',
     ],
     list: ['Instagram: @bang.cv.id', 'Telepon: 0851-5529-9160'],
   },
 ];
+
+function formatSectionTitle(position: number, title: string) {
+  return `${position + 1}. ${title}`;
+}
 </script>
 
 <template>
@@ -101,12 +105,12 @@ const privacySections: PrivacySection[] = [
 
       <div class="space-y-8">
         <article
-          v-for="section in privacySections"
+          v-for="(section, index) in privacySections"
           :key="section.title"
           class="border border-neutral-200 rounded-xl bg-white/90 p-6 shadow-sm"
         >
           <h2 class="text-2xl text-gray-900 font-semibold">
-            {{ section.title }}
+            {{ formatSectionTitle(index, section.title) }}
           </h2>
           <div class="mt-4 space-y-4">
             <p
