@@ -95,10 +95,10 @@ function formatSectionTitle(position: number, title: string) {
   <section class="bg-white py-16">
     <div class="container mx-auto max-w-4xl px-4 text-gray-900">
       <div class="mb-12 text-center space-y-4">
-        <h1 class="text-4xl font-bold md:text-5xl">
+        <h1 class="text-3xl font-bold lg:text-4xl">
           Kebijakan Privasi
         </h1>
-        <p class="mx-auto max-w-3xl text-base text-gray-600 leading-relaxed">
+        <p class="mx-auto max-w-3xl text-justify text-base text-gray-600 leading-relaxed">
           {{ privacyIntro }}
         </p>
       </div>
