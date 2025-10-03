@@ -1,103 +1,129 @@
 <script setup lang="ts">
-useHead({
-  title: 'Kebijakan Privasi - Bang CV',
-});
+useHead({ title: 'Kebijakan Privasi - Bang CV' });
+
+interface PrivacySection {
+  title: string;
+  paragraphs: string[];
+  list?: string[];
+}
+
+const privacyIntro
+  = 'Selamat datang di Bang CV. Kami berkomitmen untuk melindungi privasi Anda dan menjaga keamanan informasi pribadi yang Anda berikan kepada kami. Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan layanan kami untuk membuat Curriculum Vitae (CV) profesional.';
+
+const privacySections: PrivacySection[] = [
+  {
+    title: '1. Informasi yang Kami Kumpulkan',
+    paragraphs: [
+      'Kami mengumpulkan informasi pribadi yang Anda berikan secara sukarela saat menggunakan layanan kami, termasuk namun tidak terbatas pada:',
+    ],
+    list: [
+      'Nama lengkap',
+      'Informasi kontak (alamat email, nomor telepon)',
+      'Data pendidikan dan pengalaman kerja',
+      'Keterampilan dan kompetensi',
+      'Foto profil (jika diunggah)',
+    ],
+  },
+  {
+    title: '2. Penggunaan Informasi',
+    paragraphs: [
+      'Informasi yang Anda berikan digunakan secara eksklusif untuk:',
+    ],
+    list: [
+      'Membuat dan merancang CV profesional sesuai permintaan Anda',
+      'Menyediakan layanan konsultasi terkait pengembangan karir',
+      'Meningkatkan kualitas layanan kami',
+      'Menanggapi pertanyaan dan permintaan dukungan pelanggan',
+    ],
+  },
+  {
+    title: '3. Perlindungan Data',
+    paragraphs: [
+      'Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk melindungi informasi pribadi Anda dari akses yang tidak sah, perubahan, pengungkapan, atau penghancuran. Data Anda disimpan dalam server yang aman dan hanya dapat diakses oleh personel yang berwenang.',
+    ],
+  },
+  {
+    title: '4. Berbagi Informasi',
+    paragraphs: [
+      'Kami tidak menjual, memperdagangkan, atau menyewakan informasi pribadi Anda kepada pihak ketiga tanpa izin Anda, kecuali dalam keadaan berikut:',
+    ],
+    list: [
+      'Dengan persetujuan eksplisit Anda',
+      'Untuk mematuhi kewajiban hukum atau perintah pengadilan',
+      'Untuk melindungi hak dan keselamatan kami atau pihak lain',
+    ],
+  },
+  {
+    title: '5. Hak Anda',
+    paragraphs: [
+      'Anda memiliki hak untuk:',
+    ],
+    list: [
+      'Mengakses informasi pribadi yang kami simpan tentang Anda',
+      'Memperbaiki atau memperbarui informasi yang tidak akurat',
+      'Meminta penghapusan data Anda',
+      'Menolak penggunaan data untuk tujuan tertentu',
+    ],
+  },
+  {
+    title: '6. Cookies',
+    paragraphs: [
+      'Situs web kami menggunakan cookies untuk meningkatkan pengalaman pengguna. Anda dapat mengelola preferensi cookie melalui pengaturan browser Anda.',
+    ],
+  },
+  {
+    title: '7. Perubahan Kebijakan',
+    paragraphs: [
+      'Kami berhak untuk memperbarui kebijakan privasi ini sewaktu-waktu. Perubahan akan diberitahukan melalui situs web kami atau email.',
+    ],
+  },
+  {
+    title: '8. Kontak Kami',
+    paragraphs: [
+      'Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui:',
+    ],
+    list: ['Instagram: @bang.cv.id', 'Telepon: 0851-5529-9160'],
+  },
+];
 </script>
 
 <template>
-  <div class="container mx-auto bg-white px-4 py-8">
-    <h1 class="mb-6 text-3xl font-bold">
-      Kebijakan Privasi
-    </h1>
+  <section class="bg-white py-16">
+    <div class="container mx-auto max-w-4xl px-4 text-gray-900">
+      <div class="mb-12 text-center space-y-4">
+        <h1 class="text-4xl font-bold md:text-5xl">
+          Kebijakan Privasi
+        </h1>
+        <p class="mx-auto max-w-3xl text-base text-gray-600 leading-relaxed">
+          {{ privacyIntro }}
+        </p>
+      </div>
 
-    <div class="prose max-w-none">
-      <p class="mb-4">
-        Selamat datang di Bang CV. Kami berkomitmen untuk melindungi privasi Anda dan menjaga keamanan informasi pribadi yang Anda berikan kepada kami. Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan layanan kami untuk membuat Curriculum Vitae (CV) profesional.
-      </p>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        1. Informasi yang Kami Kumpulkan
-      </h2>
-      <p class="mb-4">
-        Kami mengumpulkan informasi pribadi yang Anda berikan secara sukarela saat menggunakan layanan kami, termasuk namun tidak terbatas pada:
-      </p>
-      <ul class="mb-4 list-disc list-inside">
-        <li>Nama lengkap</li>
-        <li>Informasi kontak (alamat email, nomor telepon)</li>
-        <li>Data pendidikan dan pengalaman kerja</li>
-        <li>Keterampilan dan kompetensi</li>
-        <li>Foto profil (jika diunggah)</li>
-      </ul>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        2. Penggunaan Informasi
-      </h2>
-      <p class="mb-4">
-        Informasi yang Anda berikan digunakan secara eksklusif untuk:
-      </p>
-      <ul class="mb-4 list-disc list-inside">
-        <li>Membuat dan merancang CV profesional sesuai permintaan Anda</li>
-        <li>Menyediakan layanan konsultasi terkait pengembangan karir</li>
-        <li>Meningkatkan kualitas layanan kami</li>
-        <li>Menanggapi pertanyaan dan permintaan dukungan pelanggan</li>
-      </ul>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        3. Perlindungan Data
-      </h2>
-      <p class="mb-4">
-        Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk melindungi informasi pribadi Anda dari akses yang tidak sah, perubahan, pengungkapan, atau penghancuran. Data Anda disimpan dalam server yang aman dan hanya dapat diakses oleh personel yang berwenang.
-      </p>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        4. Berbagi Informasi
-      </h2>
-      <p class="mb-4">
-        Kami tidak menjual, memperdagangkan, atau menyewakan informasi pribadi Anda kepada pihak ketiga tanpa izin Anda, kecuali dalam keadaan berikut:
-      </p>
-      <ul class="mb-4 list-disc list-inside">
-        <li>Dengan persetujuan eksplisit Anda</li>
-        <li>Untuk mematuhi kewajiban hukum atau perintah pengadilan</li>
-        <li>Untuk melindungi hak dan keselamatan kami atau pihak lain</li>
-      </ul>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        5. Hak Anda
-      </h2>
-      <p class="mb-4">
-        Anda memiliki hak untuk:
-      </p>
-      <ul class="mb-4 list-disc list-inside">
-        <li>Mengakses informasi pribadi yang kami simpan tentang Anda</li>
-        <li>Memperbaiki atau memperbarui informasi yang tidak akurat</li>
-        <li>Meminta penghapusan data Anda</li>
-        <li>Menolak penggunaan data untuk tujuan tertentu</li>
-      </ul>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        6. Cookies
-      </h2>
-      <p class="mb-4">
-        Situs web kami menggunakan cookies untuk meningkatkan pengalaman pengguna. Anda dapat mengelola preferensi cookie melalui pengaturan browser Anda.
-      </p>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        7. Perubahan Kebijakan
-      </h2>
-      <p class="mb-4">
-        Kami berhak untuk memperbarui kebijakan privasi ini sewaktu-waktu. Perubahan akan diberitahukan melalui situs web kami atau email.
-      </p>
-
-      <h2 class="mb-3 mt-6 text-2xl font-semibold">
-        8. Kontak Kami
-      </h2>
-      <p class="mb-4">
-        Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui:
-      </p>
-      <ul class="mb-4 list-disc list-inside">
-        <li>Instagram: @bang.cv.id</li>
-        <li>Telepon: 0851-5529-9160</li>
-      </ul>
+      <div class="space-y-8">
+        <article
+          v-for="section in privacySections"
+          :key="section.title"
+          class="border border-neutral-200 rounded-xl bg-white/90 p-6 shadow-sm"
+        >
+          <h2 class="text-2xl text-gray-900 font-semibold">
+            {{ section.title }}
+          </h2>
+          <div class="mt-4 space-y-4">
+            <p
+              v-for="paragraph in section.paragraphs"
+              :key="paragraph"
+              class="text-base text-gray-600 leading-relaxed"
+            >
+              {{ paragraph }}
+            </p>
+            <ul v-if="section.list" class="list-disc list-inside text-base text-gray-600 space-y-1">
+              <li v-for="item in section.list" :key="item">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
