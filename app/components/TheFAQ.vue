@@ -64,7 +64,9 @@ function formatNumber(position: number) {
           >
             <span class="flex items-center gap-3">
               <span class="text-sm text-green-600 font-semibold">{{ formatNumber(index + 1) }}</span>
-              <span class="text-lg text-gray-900 font-semibold">{{ faq.question }}</span>
+              <span class="text-sm text-gray-900 font-semibold lg:text-lg">
+                {{ faq.question }}
+              </span>
             </span>
             <span
               class="size-5 text-gray-500 transition-transform duration-200"
