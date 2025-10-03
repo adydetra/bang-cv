@@ -39,7 +39,7 @@ function formatNumber(position: number) {
 </script>
 
 <template>
-  <section class="bg-gray-50 py-20">
+  <section class="bg-gray-50 pb-20 pt-5">
     <div class="mx-auto max-w-4xl px-4 lg:px-0">
       <div class="mb-12 text-center space-y-4">
         <h2 class="text-4xl text-gray-900 font-black md:text-5xl">
