@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto bg-white px-4 py-8">
     <h1 class="mb-6 text-3xl font-bold">
       Kebijakan Privasi
     </h1>
