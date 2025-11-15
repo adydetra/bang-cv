@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: 'Metode pembayaran apa yang tersedia?',
-    answer: 'Pembayaran saat ini hanya melalui transfer bank BCA.',
+    answer: 'Pembayaran saat ini hanya melalui transfer bank BCA dan ShoopePay.',
   },
   {
     question: 'File apa saja yang akan dikirim?',
