@@ -42,11 +42,11 @@ function formatNumber(position: number) {
   <section class="bg-gray-50 pb-20 pt-5">
     <div class="mx-auto max-w-4xl px-4 lg:px-0">
       <div class="mb-12 text-center space-y-4">
-        <h2 class="text-4xl text-gray-900 font-black md:text-5xl">
+        <h2 class="text-xl text-gray-900 font-black md:text-5xl">
           FAQ
         </h2>
-        <p class="text-lg text-gray-600">
-          Informasi yang sering ditanyakan seputar layanan BangCV.
+        <p class="text-sm text-gray-600 md:text-lg">
+          Informasi yang sering ditanyakan.
         </p>
       </div>
 
