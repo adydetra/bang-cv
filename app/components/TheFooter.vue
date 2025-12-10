@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const footerLinks = {
   support: [
-    { label: 'Privacy Policy', to: '/privacy-policy' },
-    { label: 'Terms of Service', to: '/terms' },
     { label: 'Disclaimer', to: '/disclaimer' },
+    { label: 'Privacy Policy', to: '/privacy-policy' },
+    { label: 'Terms of Service', to: '/terms-of-service' },
   ],
   social: [{ icon: 'i-mingcute:instagram-line', href: 'www.instagram.com/bang.cv.id', label: 'Instagram' }],
 };
@@ -31,7 +31,7 @@ const currentYear = new Date().getFullYear();
           </h3>
           <ul class="list-none pl-0 space-y-3">
             <li v-for="link in footerLinks.support" :key="link.to">
-              <NuxtLink :to="`https://${link.to}`" class="text-sm text-neutral-400 transition-colors duration-200 hover:text-blue-400">
+              <NuxtLink :to="link.to" class="text-sm text-neutral-400 transition-colors duration-200 hover:text-blue-400">
                 {{ link.label }}
               </NuxtLink>
             </li>
@@ -49,7 +49,7 @@ const currentYear = new Date().getFullYear();
             <NuxtLink
               v-for="social in footerLinks.social"
               :key="social.label"
-              :to="social.href"
+              :to="`https://${social.href}`"
               target="_blank"
               external
               class="text-neutral-400 transition-colors duration-200 hover:text-white"
