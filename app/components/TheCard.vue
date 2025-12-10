@@ -39,7 +39,7 @@ function chatAdmin(id: string) {
           Template CV <span class="from-green-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">Pilihan</span>
         </h2>
         <p class="mx-auto max-w-3xl text-base text-gray-600 leading-relaxed md:text-xl">
-          Koleksi template CV premium dengan desain modern 2025. Dibuat khusus untuk berbagai profesi dan industri dengan standar internasional.
+          Koleksi template CV premium dengan desain modern {{ new Date().getFullYear() }}. Dibuat khusus untuk berbagai profesi dan industri dengan standar internasional.
         </p>
       </div>
 
