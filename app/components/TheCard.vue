@@ -83,10 +83,11 @@ function chatAdmin(id: string) {
             </div>
 
             <button
-              class="w-full transform cursor-pointer border-0 rounded-md from-green-600 to-green-700 bg-gradient-to-r px-6 py-3 text-white font-semibold transition-all duration-300 hover:scale-105 hover:from-green-700 hover:to-green-800 hover:shadow-green-500/25 hover:shadow-lg"
+              class="w-full flexcenter transform cursor-pointer gap-2 border-0 rounded-xl from-emerald-500 to-green-600 bg-gradient-to-r px-6 py-3.5 text-white font-semibold shadow-green-500/20 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:from-emerald-600 hover:to-green-700 hover:shadow-green-500/40"
               @click="chatAdmin(cv.id.toString())"
             >
-              💬 Chat Admin
+              <div class="i-mingcute:whatsapp-fill text-xl" />
+              Chat Admin
             </button>
           </div>
         </div>
