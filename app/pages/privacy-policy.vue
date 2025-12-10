@@ -92,6 +92,7 @@ function formatSectionTitle(position: number, title: string) {
 </script>
 
 <template>
+  <AppBackButton />
   <section class="bg-white py-16">
     <div class="container mx-auto max-w-4xl px-4 text-gray-900">
       <div class="mb-12 text-center space-y-4">
